@@ -1,0 +1,4 @@
+en esta clase de hizo la instalacion de bedian 9 desde la configuracion previa de las conexiones de red 
+la cual una de ellas esta habilitada en forma NAT la segunda nosotros tenemos que habilitarla y configurarla en modo adaptador solo-anfitrion
+para que esta pueda conectarse a ese puerto, luego se configuro un  usuario y contrasena el cual el usuario debe tener un nombre y un apellido nuestro
+y la contrasena debe ser una clave que recordemos para no perderla
