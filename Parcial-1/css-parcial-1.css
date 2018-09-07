@@ -1,3 +1,23 @@
+p{
+	color: white;
+	
+}
+span{
+		color: black;
+		font-weight: bold;
+		
+}
+table{
+	border-color: #20AFE5;
+	
+
+}
 td{
-	font-color:red;
+font-family: oxygen;
+font-size: 14;
+
+}
+th{
+	font-size: 18;
+	font-family: oxygen;
 }
