@@ -1,0 +1,11 @@
+Problema: Registro de un nuevo usuario
+Solucion: el problema sera el de crear un formulario para un taller que desea automatizar el registro de los clientes que 
+	  llevan su auto a reparacion en cuestion de pintura, pues sera crear un formulario en el cual el dueño del taller tenga
+          tenga un formulario con con 5 campos donde podra registrar:
+          1) el nombre del cliente
+	  2) un apellido
+	  3) modelo del carro
+	  4) año
+	  5) numero de placas
+	  6) tipo de trabajo(en esto se especificara el trabajo a realizar, si sera pintura general o se pintara solo una pieza del carro, pulido.)
+	  
