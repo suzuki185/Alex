@@ -1,59 +1,123 @@
 
 #encabezado {
- background-color: #088A68;
+ background-color: #3E606F;
  color: white;
- padding: 40px;
+ padding: 10px ;
  text-align: center;
- font-family: cursive;
+ font-family: Century Gothic;
 }
-* {margin:0; padding:0; border:0;}
+* {margin:5; padding:0; border:0;}
 html, body {
 width: auto;
 height: 100%;
-font-family:Verdana, Geneva, sans-serif;
-font-weight:bold;
-background-color:#808B96;
+font-family:Century Gothic;
+background-color:black;
 }
 header{
 position:relative;
-background-color:tomato;
+background-color:#91AA9D;
 color:#FFF;
 width:98%;
-height:13%;
+height:15%;
 margin: 0px auto;
 }
 section{
 position:relative;
 float:left;
-background-color:#215A93;
+background-color:#D1DBBD;
 width:78%;
-height:58%;
+height:50%;
 color:#FFF;
 }
 article{
-background-color: #2F80D2;
+background-color: #fff;
 width:98%;
-height:58%;
-color:#FFF;
+height:80%;
+color:black;
 }
 aside{
 position:relative;
-background-color:#1E5286;
+background-color:#91AA9D;
 width:18%;
-height:55%;
+height:70%;
 color:#FFF;
 float:left;
 }
-footer{
-position:relative;
-background-color:#088A85;
-width:98%;
-height:5%;
-color:#FFF;
-clear:both;
-}
+
+
 header,section,footer,aside,article,nav
 {
 margin:1%;
 }
 
+ul#menu {
+	/* esta propiedad sirve para cambiar el color
+		de fondo del menu principal*/
+ background: #0B615E;
+ /* esto sirve para establecer el tamaño que tendra
+	el recuadro que comtendra las li del menu principal*/
+
+ padding: 30px 5px 30px 0px;
+ 
+}
+  
+ul#menu li {
+ color:white;
+ float: left;
+ list-style: none;
+ margin: 0% 4%;
+}
+
+ /*este es un selector creo que asi se llama,de las li del menu principal al cual le cambiaremos las
+ propieddes*/
+ul#menu li:hover{
+	
+  /*esto cambia el color de las opciones del menu principal al momento de
+ colocar el cursor sobre ellas*/
+ color: yellow;
+ /*con esto controlamos la apariencia del cursor al momento de colocarse
+  sobre las opciones del menu principal*/
+ cursor:grabbing;
+}
+  
+ul#menu ul {
+/*esta es una propiedad de comportamiento de visualizacion, al dejarla en none bloqueamos la vizualizacion que 
+tendra el sub menu al dejarla en block deshabilitamos que se oculte y nos aparecera
+para este caso lo deje none para que se oculte y con la propiedad de posicionamiento position
+le doy el valor o mejor dicho le doy el modo en que se posicionara el submenu*/
+ display: none;
+ /*esto es una propiedad de posicionamineto sirve para determinar la posicion por jemplo: absolute coloca 
+ elemento se coloca en relación con su primer elemento ancestro posicionado (no estático)*/
+ position:absolute;
+ /* esta etiqueta controla la distancia que hay entre el sub menu y el menu principal*/
+ top: 10px;
+ /* esta propiedad cambia el color de fondo del submenu*/
+ background:#088A85 ;
+ padding: 0px 0px 0px 0px;
+ } 
+  /*con esto controlamos el color, la alineacion, y el margen
+  de las li que estan dentro de cada una de las ul del menu
+  principal*/
+ul#menu ul li{
+	/*posicion de las li dentro del espacio del submenu*/
+ float: left;
+ /*color de las letras(li)*/
+ color: white;
+ /*controla el espacio entre las li(opciones del submenu) que en este caso seria el 3%
+ y el 10% controla el tamaño del contenedor osea el espacio donde estan
+ las li del sub menu en orientacion hacia abajo*/
+ margin:2% 20%;
+}
+ 
+ 
+ 
+  /*esto es un selector que selecciona y aplica un estilo cuando se coloca sobre un elemento */
+ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.iehover ul,ul#menu ul li.iehover ul,ul#menu ul ul li.iehover ul {
+ /*con esto bloqueamos o activamos el modo de visualizacion que tienen las li del submenu
+ por ejemplo si lo dejamos en none no se mostrara el despliegue del sub menu*/
+ display: block;
+ /* esta propiedad cambia la apariencia del cursor cuando este entra dentro del recuadro que contiene las li del sub menu
+ al momento de ponerlos sobre las li del submenu el cursor tiene su forma normal la de una flechita
+ al moverlo hacia un espacio sin nada siempre dentro del  area del sub menu se hace una cruzita*/
+ cursor:cell;
+}
